@@ -1,10 +1,11 @@
+const test = require('./functions')
 const inquirer = require('inquirer');
 const { default: Choices } = require('inquirer/lib/objects/choices');
 
 initialize();
 
 function initialize() {
-  prompts();
+  test.test();
 }
 
 function prompts() {
@@ -16,7 +17,6 @@ function prompts() {
         message: 'Select an option',
         choices: [
           {
-            //view all departments, view all roles, view all employees, add a department, add a role, add an employee, and update an employee role
             name: "View All Departments",
             value: "VIEW_EMPLOYEES"
           },
