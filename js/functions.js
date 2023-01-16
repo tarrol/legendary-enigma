@@ -1,5 +1,5 @@
-function test() {
-  console.log("Hello world!");
+function viewDepartment(){
+
 }
 
-module.exports = { test }
+module.exports = { viewDepartment }

@@ -42,7 +42,7 @@ function prompts() {
     ]).then(res => {
       let response = res.choice;
       switch (response) {
-        case "viewDepartments": console.log(1); break;
+        case "viewDepartments": fncs.viewDepartment(); break;
         default: console.log(2);
       }
     })
